@@ -1,0 +1,263 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*General Style*/
+body {
+    margin: 0;
+    /* line-height: 20px; */
+    /* font-size: 14px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* display: flex; */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f2f2fc;
+    color: rgba(85, 85, 85);
+    width: 100%;
+
+    min-height: 100vh;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.top-bar {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    /* display: flex; */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    /* position: relative; */
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 30;
+   
+}
+
+.top-content {
+    /* background-color: red; */
+    height: 80px;
+    width: 150px;
+    padding: 25px 5px;
+    display: inline-block;
+
+}
+
+.top-content .toggler {
+
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 11;
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+
+
+
+}
+
+.top-content .toggler .nav {
+    width: 24px;
+    height: 2px;
+    background-color: rgba(85, 85, 85);
+    position: relative;
+
+
+}
+
+.top-content .toggler .nav::before {
+    content: '';
+    top: 8px;
+    height: 2px;
+    width: 24px;
+    background-color: rgba(85, 85, 85);
+    position: absolute;
+
+}
+
+.top-content .toggler .nav::after {
+    content: '';
+    top: -8px;
+    height: 2px;
+    width: 24px;
+    background-color: rgba(85, 85, 85);
+    position: absolute;
+
+}
+
+.top-content .brand {
+    position: absolute;
+    /* background-color: red; */
+    margin: 5px 40px;
+}
+
+.top-content .brand img {
+    padding-top: 5px;
+    position: relative;
+    height: auto;
+    width: 100px;
+}
+.right{
+    /* background-color: red; */
+    height: 60px;
+    width: 204px;
+    float: right;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.right .arrow{
+    /* background-color: aqua; */
+    width: 40px;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+    position: relative;
+    padding: 0 8px;
+    margin-right:8px;
+}
+.right .arrow .fa,
+.right .box .fa,
+.right .bell .fa
+{ 
+top: 32%;
+left: 27%;
+position: absolute;
+/* padding: 0 8px; */
+}
+.right .box{
+    /* background-color: saddlebrown; */
+    width: 40px;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+    position: relative;
+    padding: 0 8px;
+    margin-right: 8px;
+}
+.right .bell{
+    /* background-color: gray; */
+    width: 40px;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+    position: relative;
+    padding: 0 8px;
+    margin-right:8px;
+}
+.right .photo{
+    width: 48px;
+    height: 48px;
+    /* background-color: green; */
+ left: 12px;
+ position: relative;
+  margin-top: 5px;   
+}
+.right .photo img{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+    border: 2px solid rgba(136,136,136,1);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aside */
+.aside {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    margin-top: 80px;
+    box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.16);
+    left: 0;
+    position: fixed;
+    /* position: absolute; */
+    height: 100%;
+    width: 100px;
+   z-index: 20;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.aside .nav {
+    /* background-color: red; */
+    list-style: none;
+    text-align: center;
+    height: 100%;
+
+}
+.aside .dash{
+    margin-top: 3px;
+    text-align: center;
+display: block;
+    width:84px ;
+    height: 14px;
+    /* background-color: red; */
+}
+.aside .nav li{
+    height: 70px;
+
+    padding: 12.8px 8px;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+
+}
+.aside .nav li:hover a{
+ color: rgba(20, 83, 136, 1);
+
+}
+.aside .nav li:hover .fa,
+.right .arrow .fa:hover,
+.right .box .fa:hover,
+.right .bell .fa:hover {
+    /* background-color: red; */
+    color: rgba(20, 83, 136, 1);
+
+   }
+
+.aside .nav li a{
+    color: rgba(85, 85, 85, 1);
+    
+
+}
+.aside .nav li a .fa {
+ /* background-color: red; */
+ font-size: 16px;
+ color: rgba(85, 85, 85, 1);
+}
+
+/* main */
+.board{
+    /* opacity: 1;
+    margin-top: 80px;
+    left: 100px;
+    height: 100%;
+    min-height:90vh ;
+    width:1249px:*/
+    background-color: red; 
+    top: 80px;
+   position: relative;
+margin-left: 180px;
+/* padding: 40px 40px 40px 40px; */
+}
