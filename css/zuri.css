@@ -1,5 +1,5 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');   
 /*General Style*/
 body {
     margin: 0;
@@ -10,11 +10,14 @@ body {
     /* display: flex; */
     font-size: 0.875rem;
     line-height: 1.25rem;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
     min-height: 100vh;
-    position: relative;
     background-color: #f2f2fc;
     color: rgba(85, 85, 85);
     width: 100%;
+
 
     min-height: 100vh;
 }
@@ -34,6 +37,9 @@ body {
 ::before,
 ::after {
     box-sizing: border-box;
+}
+.blue{
+    color: rgba(20, 83, 136, 1);
 }
 
 .top-bar {
@@ -249,15 +255,144 @@ display: block;
 
 /* main */
 .board{
-    /* opacity: 1;
-    margin-top: 80px;
-    left: 100px;
-    height: 100%;
-    min-height:90vh ;
-    width:1249px:*/
-    background-color: red; 
+    background-color: rgba(248, 248, 248, 1); 
     top: 80px;
    position: relative;
-margin-left: 180px;
-/* padding: 40px 40px 40px 40px; */
+margin-left: 100px;
+min-height: 88vh;
+padding: 50px 40px;
+
+}
+.board .cap{
+  display: block;
+  padding: 2px 0;
+}
+h1{
+    font-family:     'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    
+    /* background-color:gray; */
+    display: inline-block;
+    
+}
+p{
+    font-family:'Nunito', sans-serif;
+font-size: 14px;
+}
+.cap span{
+    font-family:   'Nunito', sans-serif;
+    font-weight: 700;
+
+
+}
+.flex-container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    /* width: 100%; */
+   
+}
+.flex{
+    font-family:'Nunito', sans-serif;
+
+    background-color:rgba(255, 255, 255, 1) ;
+    margin-right: 30px;
+    width: 100%;
+    height: auto;
+    padding: 0px 0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 35px 22px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+ .four{
+    margin-right: 20px;
+    padding: 20px 22px;
+    /* padding-top: 30px; */
+    
+}
+.four h{
+    font-size: 20px;
+}
+.four p span{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.flex .fa,.fa-solid {
+    
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+.flex h2{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: rgba(85, 85, 85, 1);
+}
+
+.flex p{
+    margin-top: 26px;
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+}
+.flex span{
+    color: rgba(85, 85, 85, 1);
+    font-size: 14px;
+    font-weight: 300;
+}
+.flex .toggler {
+padding: 12px;
+   padding-bottom: 0;
+    /* background-color: red; */
+    border: 1px solid transparent; 
+    
+   display: inline-block;
+    position: relative;
+ 
+
+
+
+}
+.flex:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+ .flex .nav {
+    width: 9px;
+    height: 25px;
+    bottom: 0;
+    background-color:  rgba(20, 83, 136, 1);
+    position: relative;
+
+
+}
+
+.flex .nav::before {
+    content: '';
+    left:12px ;
+    /* top: 8px; */
+    bottom: 0;
+    height: 34px;
+    width:9px;
+    background-color: rgba(20, 83, 136, 1);
+    position: absolute;
+
+}
+
+.flex .nav::after {
+    content: '';
+    left: -12px;
+    bottom: 0;
+    height: 14px;
+    width: 9px;
+    background-color:  rgba(20, 83, 136, 1);
+    position: absolute;
+
 }
