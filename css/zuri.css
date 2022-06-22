@@ -1,5 +1,6 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 /*General Style*/
 body {
     margin: 0;
@@ -24,6 +25,12 @@ body {
 
 .box-shadow {
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.16);
+}
+.left{
+    text-align: left;
+}
+.righty{
+    text-align: right;
 }
 
 * {
@@ -197,6 +204,7 @@ position: absolute;
     margin-top: 80px;
     box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.16);
     left: 0;
+    
     position: fixed;
     /* position: absolute; */
     height: 100%;
@@ -224,8 +232,8 @@ display: block;
 }
 .aside .nav li{
     height: 70px;
-
-    padding: 12.8px 8px;
+    
+    padding: 15px 8px;
     border-bottom: 1px solid rgba(221, 221, 221, 1);
 
 }
@@ -243,9 +251,10 @@ display: block;
    }
 
 .aside .nav li a{
+    font-weight: 500;
+    font-size: 13px;
     color: rgba(85, 85, 85, 1);
-    
-
+    font-family: 'Montserrat', sans-serif;
 }
 .aside .nav li a .fa {
  /* background-color: red; */
@@ -261,7 +270,6 @@ display: block;
 margin-left: 100px;
 min-height: 88vh;
 padding: 50px 40px;
-
 }
 .board .cap{
   display: block;
@@ -271,11 +279,8 @@ h1{
     font-family:     'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 4px;
-    
-    /* background-color:gray; */
-    display: inline-block;
-    
+    margin-bottom: 4px;   
+    display: inline-block;  
 }
 p{
     font-family:'Nunito', sans-serif;
@@ -284,11 +289,8 @@ font-size: 14px;
 .cap span{
     font-family:   'Nunito', sans-serif;
     font-weight: 700;
-
-
 }
 .flex-container{
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     margin-top: 18px;
@@ -308,9 +310,10 @@ font-size: 14px;
     padding: 35px 22px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+   
 }
  .four{
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 20px 22px;
     /* padding-top: 30px; */
     
@@ -396,3 +399,86 @@ padding: 12px;
     position: absolute;
 
 }
+.point{
+display: flex;
+flex-direction: row;
+margin-top: 25px;
+}
+.post{
+    font-family:'Nunito', sans-serif;
+
+    background-color:rgba(255, 255, 255, 1) ;
+    margin-right: 30px;
+    width: 100%;
+    height: auto;
+padding: 20px;
+    border-radius: 10px;
+    /* text-align: center; */
+    /* padding: 35px 22px; */
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+   
+}
+ .star{
+    margin-right: 0px;
+      
+}
+.post h1{
+    font-weight: 700;
+
+    font-size: 20px;
+    /* background-color: red; */
+    display: block;
+}
+table{
+    margin-top: 12px;
+}
+table, th, td{
+    border-bottom:1px solid rgba(238, 238, 238, 1);
+        padding: 10px;
+    border-collapse: collapse;
+    font-family:'Nunito', sans-serif;
+    /* text-align: center; */
+}
+
+th{
+    /* background-color: red; */
+    padding-right: 50px;
+    /* padding-left: 0; */
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.case{
+    /* background-color: red; */
+    /* text-align: right; */
+    float: right;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 15px;
+    border: 1px solid ;
+    padding: 0px 6px;
+    /* margin-right: 51px; */
+    text-transform: uppercase;
+    /* display: inline-block; */
+    /* padding: 0 50px; */
+
+}
+.shift{
+    /* background-color: red; */
+    margin-right: 51px;
+}
+ .side a{
+    color: rgba(20, 83, 136, 1);
+    font-size: 14px;
+    font-weight: 800;
+
+ }
+ .side a:hover{
+    color: rgb(5, 42, 73);
+
+ }
+ .side p{
+    font-weight: 700;
+ }
