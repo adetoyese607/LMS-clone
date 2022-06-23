@@ -15,6 +15,7 @@ body {
     display: -ms-flexbox;
     flex-direction: column;
     min-height: 100vh;
+    
     background-color: #f2f2fc;
     color: rgba(85, 85, 85);
     width: 100%;
@@ -269,7 +270,8 @@ display: block;
    position: relative;
 margin-left: 100px;
 min-height: 88vh;
-padding: 50px 40px;
+padding: 0 40px;
+padding-top: 50px;
 }
 .board .cap{
   display: block;
@@ -290,6 +292,7 @@ font-size: 14px;
     font-family:   'Nunito', sans-serif;
     font-weight: 700;
 }
+/* FLEX */
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -399,16 +402,22 @@ padding: 12px;
     position: absolute;
 
 }
+/* Post */
+
 .point{
 display: flex;
 flex-direction: row;
-margin-top: 25px;
+flex: 0 0 100%;
+margin-top: 20px;
+flex: 0 0 100%;
+
+
 }
 .post{
     font-family:'Nunito', sans-serif;
 
     background-color:rgba(255, 255, 255, 1) ;
-    margin-right: 30px;
+    /* margin-right: 6  0px; */
     width: 100%;
     height: auto;
 padding: 20px;
@@ -417,6 +426,8 @@ padding: 20px;
     /* padding: 35px 22px; */
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    margin-right:24px;
+
    
 }
  .star{
@@ -432,22 +443,36 @@ padding: 20px;
 }
 table{
     margin-top: 12px;
+    flex: 0 0 50%;
 }
 table, th, td{
-    border-bottom:1px solid rgba(238, 238, 238, 1);
+    /* border:1px solid rgba(238, 238, 238, 1); */
+
         padding: 10px;
     border-collapse: collapse;
     font-family:'Nunito', sans-serif;
     /* text-align: center; */
 }
+.hover tr:hover :not(th){
+    background-color:rgb(249, 249, 249) ;
+}
+
 
 th{
     /* background-color: red; */
     padding-right: 50px;
     /* padding-left: 0; */
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
+    border-bottom:1px solid rgba(238, 238, 238, 1);
+}
+tr{
+    border-bottom:1px solid rgba(238, 238, 238, 1);
+}
+.border-transperent{
+    /* background-color: dodgerblue; */
+    border-bottom: transparent;
 }
 
 .case{
@@ -469,16 +494,109 @@ th{
     /* background-color: red; */
     margin-right: 51px;
 }
+.side{
+    padding:20px 0 ;
+}
+
  .side a{
     color: rgba(20, 83, 136, 1);
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
 
  }
  .side a:hover{
     color: rgb(5, 42, 73);
 
  }
+ .node{
+    /* background-color: red; */
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    /* font-weight: 200; */
+ }
  .side p{
     font-weight: 700;
+ }
+ .ann{
+    margin-right: 12px;
+    /* background-color: red; */
+ }
+ .btn{
+    background-color: #e7332b;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius:999px;
+    padding: 8px 20px;
+ }
+ .overflow{
+    
+    overflow-x:scroll;
+ }
+ .btn a{
+    color: #fff;
+    font-weight: 700;
+ }
+ .btn:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(12, 50, 82, 1);
+ }
+ .margin-top{
+    margin-top: 30px;
+    /* flex: 0 0 50%;/ */
+ }
+ .pad{
+    padding:5px 4px;
+    /* background-color: red; */
+ }
+ .center{
+    text-align: center;
+ }
+ .more span{
+    content: '';
+    padding-left: 3px;
+word-spacing: 20px;
+ }
+ .more{
+    padding-right: 14px;
+ }
+ .left p{
+    font-size: 12px;
+    font-weight: 400
+ }
+ .more p{
+    font-size: 14px;
+ }
+ .green{
+    color: rgba(40, 167, 69, 1);
+    font-weight: 700;
+ }
+ .en{
+    padding: 15px 10px;
+ }
+
+
+ .footer{
+    background-color: transparent;
+    /* background-color: red; */
+padding:  0px;
+   
+ }
+ 
+
+.foot {
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+ }
+ .footer .righty{
+    padding: 18px 0;
+ }
+ .mix p{
+    margin-right:-0px;
+    margin-left:-10px;
+    /* background-color: red; */
+ }
+ .none{
+    margin-top: 20px;
  }
