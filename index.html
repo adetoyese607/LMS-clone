@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/zuri.css" type="text/css">
   <script src="https://kit.fontawesome.com/8614b8cf5d.js" crossorigin="anonymous"></script>
-
+  <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
 </head>
 
 <body>
@@ -27,16 +28,35 @@
     </div>
 
     <div class="right">
-      <div class="arrow"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
-       </div>
+      <div class="arrow"><i class="fa fa-arrows-alt" aria-hidden="true">
+        <span class="tooltiptext box-shadow">Fullscreen</span>
+      </i>
+        
+      </div>
       <div class="box"><i class="fa fa-columns" aria-hidden="true"></i>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div></div>
-      <div class="bell"><i class="fa fa-bell-o"></i></div>
-      <div class="photo"><img src="image/photo.jpeg" alt="photo"></div>
+    </div>
+      <div class="bell"><i class="fa fa-bell-o">
+        <span class="tooltiptext box-shadow">Loading Notifications...</span>
+
+      </i></div>
+      <div class="photo"><img src="image/photo.jpeg" alt="photo">
+        <div class="menu box-shadow ">
+          <h3>ADETOYESE SAMSON<br> <span>Student</span></h3>
+          <hr style="height:1px;border-width:0; ">
+          <!-- <hr class="free"> -->
+          <ul>
+            <li><i class="far fa-user-circle"></i><a href="#">Update Student Profile</a></li>
+           
+            <li><i class="far fa-user-circle"></i><a href="#">View Profile</a></li>
+          
+            <li class="tip"><i class="fas fa-key"></i><a href="#">Change Password</a></li>
+            <hr style="height:1px;border-width:0; ">
+
+            <li><i class="	fa fa-power-off"></i><a href="#"> Logout</a></li>
+
+          </ul>
+        </div>
+      </div>
 
     </div>
   </header>
@@ -149,7 +169,7 @@
           <p>Introduction<span></span>to Javascript</p>
         </td>	
         <td class="center">5</td>
-        <td>Not Submitted</td>
+        <td> Submitted</td>
         <td>Submission Closed</td>
         <td class="blue">View</td>	
       </tr>
@@ -164,7 +184,7 @@
           <p>Introduction<span></span>to Javascript</p>
         </td>	
         <td class="center">3</td>
-        <td>Not Submitted</td>
+        <td> Submitted</td>
         <td>Submission Closed</td>
         <td class="blue">View</td>	
       </tr>
@@ -348,8 +368,8 @@
   </tr>
   <tr class="border-transperent foot">
     <td class="en mix" >
-      <p>  &copy; 2022 | POWERED BY ZURI</p></td>
-      <td class=" righty blue mix"><p>Bug Report</p></td>	
+      <p> &copy; 2022 | POWERED BY ZURI</p></td>
+      <td class=" righty blue mix"><a href="#"> Bug Report</a></td>	
   </tr> 
 </table>
 </div>

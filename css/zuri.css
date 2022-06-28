@@ -149,12 +149,15 @@ body {
     /* background-color: aqua; */
     width: 40px;
     font-size: 20px;
-    color: rgba(85, 85, 85, 1);
+    color: rgb(114, 114, 114);
     position: relative;
     /* position: relative; */
     display: inline-block;
     padding: 0 8px;
     margin-right:8px;
+    -webkit-transition: all 0.3s ease;
+    transition: alls ease;
+
 }
 .right .arrow .fa,
 .right .box .fa,
@@ -169,7 +172,7 @@ position: absolute;
     /* background-color: saddlebrown; */
     width: 40px;
     font-size: 20px;
-    color: rgba(85, 85, 85, 1);
+    color:rgb(114, 114, 114);
     position: relative;
     padding: 0 8px;
     margin-right: 8px;
@@ -178,7 +181,7 @@ position: absolute;
     /* background-color: gray; */
     width: 40px;
     font-size: 20px;
-    color: rgba(85, 85, 85, 1);
+    color: rgb(114, 114, 114);
     position: relative;
     padding: 0 8px;
     margin-right:8px;
@@ -189,19 +192,130 @@ position: absolute;
     /* background-color: green; */
  left: 12px;
  position: relative;
-  margin-top: 5px;   
+  margin-top: 5px;  
+
 }
 .right .photo img{
     width: 48px;
     height: 48px;
     border-radius: 1000px;
-    border: 2px solid rgba(136,136,136,1);
+    border: 2px solid rgb(114, 114, 114);
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
+    transition: opacity 0.2s;
+}
+.photo .menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width:10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: rotate(45deg);
+}
+.photo .menu{
+    display: none;
+    font-family:'Nunito', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    position: absolute;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px 20px;
+    width: 256px;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+.right .photo:hover .menu{
+    display: block;
+    opacity: 1;
+    /* -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; */
 }
 
-/* Aside */
-.aside {
+
+.photo .menu h3{
+    /* width: 70%; */
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 20px;
+    /* font-weight: bolder; */
+    font-weight: 700;
+    color: rgba(85, 85, 85, 1);
+    line-height: 20px;
+}
+.photo .menu h3 span{
+    font-size: 14px;
+    font-weight:500;
+}
+hr{
+    position: absolute;
+    width: 100%;
+  color: rgba(238, 238, 238, 1);  
+  background-color: rgba(238, 238, 238, 1);  
+  /* background-color: green; */
+    left: 0;
+}
+.photo .menu ul li{
+    list-style: none;
+    padding-top: 25px ;
+    /* margin-bottom: 1px; */
+    display: flex;
+    align-items: center;
+    color: red;
+    /* background-color: firebrick; */
+    
+    
+}
+.photo .menu ul li:hover a,
+.photo .menu ul li:hover i{
+color: rgba(20, 83, 136, 1);
+}
+
+.photo .menu ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+    /* font-weight: 200; */
+    transition: .5s;
+color: rgb(114, 114, 114);
+}
+
+.photo .menu ul li a{
+    /* display: inline-block; */
+    text-decoration: none;
+    font-weight: 400;
+    
+    color: rgba(85, 85, 85, 1);
+}
+.tip{
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aside */.aside {
     background-color: rgba(255, 255, 255, 1);
     opacity: 1;
     margin-top: 80px;
@@ -247,7 +361,7 @@ display: block;
 .aside .nav li:hover .fa,
 .right .arrow .fa:hover,
 .right .box .fa:hover,
-.right .bell .fa:hover {
+.right .bell .fa:hover { 
     /* background-color: red; */
     color: rgba(20, 83, 136, 1);
 
@@ -262,7 +376,7 @@ display: block;
 .aside .nav li a .fa {
  /* background-color: red; */
  font-size: 16px;
- color: rgba(85, 85, 85, 1);
+ color: rgb(114, 114, 114);
 }
 
 /* main */
@@ -594,9 +708,10 @@ padding:  0px;
  .footer .righty{
     padding: 18px 0;
  }
- .mix p{
+ .mix a{
     margin-right:-0px;
     margin-left:-10px;
+    color: rgba(20, 83, 136, 1);
     /* background-color: red; */
  }
  .none{
@@ -607,32 +722,108 @@ padding:  0px;
  .dropdown-content {
     display: none;
     position: absolute;
-    left: -170%;
-    top: 117%;
-    background-color: red;
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 200%;
+    
+   
 }
+
  .box .dropdown-content::after {
     content: "";
     position: absolute;
-    top: -11%;
+    top: -200%;
     left: 50%;
     /* margin-left: -5px; */
     border-width: 7px;
     border-style: solid;
-    border-color: transparent transparent black transparent  ;
+    border-color: transparent transparent red transparent  ;
 }
 .dropdown-content a {
-       color: black;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
 
+}
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .box:hover .dropdown-content {
     display: block;
 }
+
+/* Tooltiptext */
+.arrow .tooltiptext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(85, 85, 85);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 12px 0;
+    position: absolute;
+    z-index: 1;
+    top: 190%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.bell .tooltiptext  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    visibility: hidden;
+    width: 370px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(85, 85, 85);
+    text-align: center;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 12px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 300%;
+    left: 50%;
+    margin-left: -280px;
+    opacity: 0;
+    transition: opacity 0.2s;
+   
+
+}
+
+.arrow .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 1) transparent;
+}
+
+.bell .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 130%;  /* At the top of the tooltip */
+    left: 75%;
+    margin-left: -5px;
+   
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(238, 236, 236) transparent;
+}
+.arrow:hover .tooltiptext,
+.bell:hover .tooltiptext  {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
 
