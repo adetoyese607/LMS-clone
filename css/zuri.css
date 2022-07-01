@@ -1,11 +1,10 @@
+
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');   
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 /*General Style*/
 body {
     margin: 0;
-    /* line-height: 20px; */
-    /* font-size: 14px; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     /* display: flex; */
@@ -16,12 +15,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     
-    background-color: #f2f2fc;
+    background-color: rgba(248, 248, 248, 1); 
     color: rgba(85, 85, 85);
     width: 100%;
-
-
     min-height: 100vh;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
 }
 
 .box-shadow {
@@ -61,7 +60,7 @@ body {
     position: fixed;
     /* position: relative; */
     padding-left: 40px;
-    padding-right: 30px;
+    padding-right: 40px;
     z-index: 30;
    
 }
@@ -79,46 +78,57 @@ body {
 
     height: 30px;
     width: 30px;
-    background-color: transparent;
+    padding-top: 2px;
+    /* background-color: red; */
     border: 1px solid transparent;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    z-index: 11;
+    cursor: pointer;
+    /* z-index: 11; */
     position: absolute;
     display: -ms-flexbox;
     display: flex;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
 
 
 
 }
+.top-content .toggler:hover{
+    transform: scale(1.1);
+}
 
 .top-content .toggler .nav {
-    width: 24px;
+    width: 23px;
     height: 2px;
-    background-color: rgba(85, 85, 85);
+    background-color: rgb(114, 114, 114);
     position: relative;
+    border-radius: 50%;
 
 
 }
 
 .top-content .toggler .nav::before {
     content: '';
-    top: 8px;
+    top: 7px;
     height: 2px;
-    width: 24px;
-    background-color: rgba(85, 85, 85);
+    width: 23px;
+    background-color: rgb(114, 114, 114);
     position: absolute;
+    border-radius: 50%;
+    
 
 }
 
 .top-content .toggler .nav::after {
     content: '';
-    top: -8px;
+    top: -7px;
     height: 2px;
-    width: 24px;
-    background-color: rgba(85, 85, 85);
+    width: 23px;
+    border-radius: 50%;
+    background-color:rgb(114, 114, 114);
     position: absolute;
 
 }
@@ -177,6 +187,8 @@ position: absolute;
     position: relative;
     padding: 0 8px;
     margin-right: 8px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
 }
 .box .list::before{
     content: '';
@@ -200,10 +212,12 @@ position: absolute;
     padding: 20px 10px;
     width: 200px;
     border-radius: 10px;
-    transition: opacity 0.2s;
+
     
 }
 .right .box:hover .list{
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
     visibility: visible;
      opacity: 1;
     /* -webkit-transition: all 0.3s ease-in;
@@ -314,6 +328,8 @@ color: rgb(114, 114, 114);
 .right .photo:hover .menu{
     visibility: visible;
      opacity: 1;
+     transition: all 0.4s ease-in-out;
+     -webkit-transition: all 0.4s ease-in-out;
     /* -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; */
 }
@@ -385,19 +401,8 @@ color: rgb(114, 114, 114);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Aside */.aside {
+/* Aside */
+.aside {
     background-color: rgba(255, 255, 255, 1);
     opacity: 1;
     margin-top: 80px;
@@ -410,9 +415,10 @@ color: rgb(114, 114, 114);
     width: 100px;
    z-index: 20;
     top: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
+
 
 .aside .nav {
     /* background-color: red; */
@@ -466,11 +472,13 @@ display: block;
     background-color: rgba(248, 248, 248, 1); 
     top: 80px;
    position: relative;
-margin-left: 100px;
+margin-left:100px;
 min-height: 88vh;
 padding-left:40px;
-padding-right: 30px;
+padding-right: 40px;
 padding-top: 50px;
+transition: all 0.7s ease;
+-webkit-transition: all 0.7s ease;
 }
 .board .cap{
   display: block;
@@ -494,6 +502,7 @@ font-size: 14px;
 /* FLEX */
 .flex-container{
     display: flex;
+    flex: 0 0 100%;
     flex-direction: row;
     margin-top: 18px;
     /* width: 100%; */
@@ -501,7 +510,7 @@ font-size: 14px;
 }
 .flex{
     font-family:'Nunito', sans-serif;
-
+     
     background-color:rgba(255, 255, 255, 1) ;
     margin-right: 30px;
     width: 100%;
@@ -625,7 +634,7 @@ padding: 20px;
     /* padding: 35px 22px; */
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    margin-right:24px;
+    margin-right:15px;
 
    
 }
@@ -723,13 +732,14 @@ tr{
  .btn{
     background-color: #e7332b;
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius:999px;
     padding: 8px 20px;
+    
  }
  .overflow{
     padding-bottom: 0px;
-    overflow-x:scroll;
+    overflow-x: auto;
  }
  .btn a{
     color: #fff;
@@ -902,11 +912,50 @@ padding:  0px;
 .arrow:hover .tooltiptext,
 .bell:hover .tooltiptext  {
     visibility: visible;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
     opacity: 1;
 }
 
 
 
 
+@media screen and (max-width: 1020px) {
+   .flex-container {
+   /* background-color: red; */
+   /* display: flex; */
+   flex-direction: column;
+   gap: 20px;
+  /* flex: 0 0 100%; */
+  
+    }
+    .point{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;  
+        gap: 20px;  
+        /* padding-bottom: 20px; */
+        }
+.right .arrow{
+    display: none;
+}
+   .top-bar{
+    padding-right: 0;
+   }
 
 
+    }
+
+body.active  .aside{
+    left: -100px;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
+body.active .board{
+    margin-left: 0;
+    /* width: 100%; */
+    padding-left: 10px;
+
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
