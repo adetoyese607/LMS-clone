@@ -524,6 +524,7 @@ font-size: 14px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
    
+    /* margin-bottom: 10px; */
 }
  .four{
     margin-right: 0px;
@@ -937,8 +938,11 @@ body.active .board{
 @media screen and (max-width: 1020px) {
    .flex-container {
    flex-direction: column;
-   gap: 20px;
+   /* gap: 20px; */
   
+    }
+    .flex{
+        margin-bottom: 20px;
     }
     .point{
         display: flex;
@@ -978,6 +982,8 @@ body.active .board{
     /* width: 100%; */
     padding-left: 20px;
 }
+
+
 
     }
 @media screen and (max-width: 470px){
