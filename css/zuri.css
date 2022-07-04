@@ -19,8 +19,8 @@ body {
     color: rgba(85, 85, 85);
     width: 100%;
     min-height: 100vh;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
+    /* transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease; */
 }
 
 .box-shadow {
@@ -54,7 +54,8 @@ body {
     width: 100%;
     height: 80px;
     top: 0;
-    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
@@ -148,12 +149,13 @@ body {
 .right{
     /* background-color: red; */
     height: 60px;
-    width: 204px;
+    /* width: 204px; */
+    margin-right: 20px;
     float: right;
     display: flex;
     margin-top: 10px;
     text-align: center;
-    
+    /* right: 0; */
 }
 
 .right .arrow{
@@ -415,8 +417,8 @@ color: rgb(114, 114, 114);
     width: 100px;
    z-index: 20;
     top: 0;
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -477,8 +479,8 @@ min-height: 88vh;
 padding-left:40px;
 padding-right: 40px;
 padding-top: 50px;
-transition: all 0.7s ease;
--webkit-transition: all 0.7s ease;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
 }
 .board .cap{
   display: block;
@@ -916,36 +918,6 @@ padding:  0px;
     -webkit-transition: all 0.4s ease-in-out;
     opacity: 1;
 }
-
-
-
-
-@media screen and (max-width: 1020px) {
-   .flex-container {
-   /* background-color: red; */
-   /* display: flex; */
-   flex-direction: column;
-   gap: 20px;
-  /* flex: 0 0 100%; */
-  
-    }
-    .point{
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 50%;  
-        gap: 20px;  
-        /* padding-bottom: 20px; */
-        }
-.right .arrow{
-    display: none;
-}
-   .top-bar{
-    padding-right: 0;
-   }
-
-
-    }
-
 body.active  .aside{
     left: -100px;
     transition: all 0.7s ease;
@@ -959,3 +931,59 @@ body.active .board{
     transition: all 0.7s ease;
     -webkit-transition: all 0.7s ease;
 }
+
+
+
+@media screen and (max-width: 1020px) {
+   .flex-container {
+   flex-direction: column;
+   gap: 20px;
+  
+    }
+    .point{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;  
+        gap: 20px;  
+        }
+.right .arrow{
+    display: none;
+}
+  
+
+}
+
+
+    
+    @media screen and (max-width: 767px){
+      .board{
+        padding-top: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+      }
+      .top-bar{
+        padding: 10px;
+      }
+    }
+
+    @media screen and (max-width: 639px){
+.board{
+    margin-left: 0;
+    padding-left: 20px;
+    
+}
+
+body.active .board{
+    margin-left:0;
+    /* width: 100%; */
+    padding-left: 20px;
+}
+
+    }
+@media screen and (max-width: 470px){
+   .bell .tooltiptext{
+    width: 280px;
+    left: 75px;
+   }
+}
+
