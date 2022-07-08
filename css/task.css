@@ -468,353 +468,6 @@ display: block;
  font-size: 16px;
  color: rgb(114, 114, 114);
 }
-
-/* main */
-.board{
-    background-color: rgba(248, 248, 248, 1); 
-    top: 80px;
-   position: relative;
-margin-left:100px;
-min-height: 88vh;
-padding-left:40px;
-padding-right: 40px;
-padding-top: 50px;
-transition: all 0.3s ease;
--webkit-transition: all 0.3s ease;
-}
-.board .cap{
-  display: block;
-  padding: 2px 0;
-}
-h1{
-    font-family:     'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 4px;   
-    display: inline-block;  
-}
-p{
-    font-family:'Nunito', sans-serif;
-font-size: 14px;
-}
-.cap span{
-    font-family:   'Nunito', sans-serif;
-    font-weight: 700;
-}
-/* FLEX */
-.flex-container{
-    display: flex;
-    flex: 0 0 100%;
-    flex-direction: row;
-    margin-top: 18px;
-    /* width: 100%; */
-   
-}
-.flex{
-    font-family:'Nunito', sans-serif;
-     
-    background-color:rgba(255, 255, 255, 1) ;
-    margin-right: 30px;
-    width: 100%;
-    margin-bottom: 10px;
-    height: auto;
-    padding: 0px 0;
-    border-radius: 10px;
-    text-align: center;
-    padding: 35px 22px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-   
-    /* margin-bottom: 10px; */
-}
- .four{
-    margin-right: 0px;
-    padding: 20px 22px;
-    /* padding-top: 30px; */
-    
-}
-.four h{
-    font-size: 20px;
-}
-.four p span{
-    font-size: 13px;
-    font-weight: 400;
-}
-
-
-.flex .fa,.fa-solid {
-    
-    font-size: 33px;
-    margin-bottom: 10px;
-}
-.flex h2{
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 8px;
-    color: rgba(85, 85, 85, 1);
-}
-
-.flex p{
-    margin-top: 26px;
-    font-size: 30px;
-    /* margin-bottom: 10px; */
-}
-.flex span{
-    color: rgba(85, 85, 85, 1);
-    font-size: 14px;
-    font-weight: 300;
-}
-.flex .toggler {
-padding: 12px;
-   padding-bottom: 0;
-    /* background-color: red; */
-    border: 1px solid transparent; 
-    
-   display: inline-block;
-    position: relative;
- 
-
-
-
-}
-.flex:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
- .flex .nav {
-    width: 9px;
-    height: 25px;
-    bottom: 0;
-    background-color:  rgba(20, 83, 136, 1);
-    position: relative;
-
-
-}
-
-.flex .nav::before {
-    content: '';
-    left:12px ;
-    /* top: 8px; */
-    bottom: 0;
-    height: 34px;
-    width:9px;
-    background-color: rgba(20, 83, 136, 1);
-    position: absolute;
-
-}
-
-.flex .nav::after {
-    content: '';
-    left: -12px;
-    bottom: 0;
-    height: 14px;
-    width: 9px;
-    background-color:  rgba(20, 83, 136, 1);
-    position: absolute;
-
-}
-/* Post */
-
-.point{
-display: flex;
-flex-direction: row;
-flex: 0 0 100%;
-margin-top: 20px;
-flex: 0 0 100%;
-
-
-}
-.post{
-    font-family:'Nunito', sans-serif;
-
-    background-color:rgba(255, 255, 255, 1) ;
-    /* margin-right: 6  0px; */
-    width: 100%;
-    height: auto;
-padding: 20px;
-    border-radius: 10px;
-    /* text-align: center; */
-    /* padding: 35px 22px; */
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    margin-right:15px;
-
-   
-}
- .star{
-    margin-right: 0px;
-      
-}
-.post h1{
-    font-weight: 700;
-
-    font-size: 20px;
-    /* background-color: red; */
-    display: block;
-}
-table{
-    margin-top: 12px;
-    flex: 0 0 50%;
-}
-table, th, td{
-    /* border:1px solid rgba(238, 238, 238, 1); */
-
-        padding: 10px;
-    border-collapse: collapse;
-    font-family:'Nunito', sans-serif;
-    /* text-align: center; */
-}
-.hover tr:hover :not(th){
-    background-color:rgb(249, 249, 249) ;
-}
-
-
-th{
-    /* background-color: red; */
-    padding-right: 50px;
-    /* padding-left: 0; */
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-bottom:1px solid rgba(238, 238, 238, 1);
-}
-tr{
-    border-bottom:1px solid rgba(238, 238, 238, 1);
-}
-.border-transperent{
-    /* background-color: dodgerblue; */
-    border-bottom: transparent;
-}
-
-.case{
-    /* background-color: red; */
-    /* text-align: right; */
-    float: right;
-    font-size: 13px;
-    font-weight: 400;
-    border-radius: 15px;
-    border: 1px solid ;
-    padding: 0px 6px;
-    /* margin-right: 51px; */
-    text-transform: uppercase;
-    /* display: inline-block; */
-    /* padding: 0 50px; */
-
-}
-.shift{
-    /* background-color: red; */
-    margin-right: 51px;
-}
-.side{
-    padding:20px 0 ;
-}
-
- .side a{
-    color: rgba(20, 83, 136, 1);
-    font-size: 14px;
-    font-weight: 700;
-
- }
- .side a:hover{
-    color: rgb(5, 42, 73);
-
- }
- .node{
-    /* background-color: red; */
-    text-transform: uppercase;
-    letter-spacing: -0.6px;
-    /* font-weight: 200; */
- }
- .side p{
-    font-weight: 700;
- }
- .ann{
-    margin-right: 12px;
-    /* background-color: red; */
- }
- .btn{
-    background-color: #e7332b;
-    display: inline-block;
-    margin: 20px 0;
-    border-radius:999px;
-    padding: 8px 20px;
-    
- }
- .overflow{
-    padding-bottom: 0px;
-    overflow-x: auto;
- }
- .btn a{
-    color: #fff;
-    font-weight: 700;
- }
- .btn:hover{
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(12, 50, 82, 1);
- }
- .margin-top{
-    margin-top: 30px;
-    /* flex: 0 0 50%;/ */
- }
- .pad{
-    padding:5px 4px;
-    /* background-color: red; */
- }
- .center{
-    text-align: center;
- }
- .more span{
-    content: '';
-    padding-left: 3px;
-word-spacing: 20px;
- }
- .more{
-    padding-right: 14px;
- }
- .left p{
-    font-size: 12px;
-    font-weight: 400
- }
- .more p{
-    font-size: 14px;
- }
- .green{
-    color: rgba(40, 167, 69, 1);
-    font-weight: 700;
- }
- .en{
-    padding: 15px 10px;
- }
-
-
- .footer{
-    background-color: transparent;
-    /* background-color: red; */
-padding:  0px;
-   
- }
- 
-
-.foot {
-    border: 1px solid rgba(221, 221, 221, 1);
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
- }
- .footer .righty{
-    padding: 18px 0;
- }
- .mix a{
-    margin-right:-0px;
-    margin-left:-10px;
-    color: rgba(20, 83, 136, 1);
-    /* background-color: red; */
- }
- .none{
-    margin-top: 20px;
- }
-
  /* dropdown */
  .dropdown-content {
     display: none;
@@ -935,71 +588,152 @@ body.active .board{
 }
 
 
+.board{
+position: relative;
+    /* background-color: red; */
+    margin-top: 80px;
+    margin-left: 100px;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    
+}
+.intro{
+    margin-left: 20px;
+    /* background-color: red; */
+    /* padding: 12px; */
+    font-family:  'Nunito', sans-serif;
+}
+.intro h1{
+    /* font-family:  'Nunito', sans-serif; */
+    font-size: 32px;
+    /* background-color: red; */
+    /* padding-left: 1px; */
+    font-weight: 400;
+    display: inline-block; 
+}
+.intro p{
+    font-size: 14px;
+    font-weight: 400;
+    /* margin-bottom: 20px; */
+    display: inline-block;
+    margin-top: 4px;
+    /* background-color: red; */
+}
+.intro p i{
+    font-size: 13px;
+    position: relative;
+    /* width: 40px; */
+    /* margin-top: 10px; */
+    padding: 0 1px;
+ color: rgb(196, 193, 193);
+    top: 2px;
+    /* display: inline-block; */
+}
 
-@media screen and (max-width: 1020px) {
-   .flex-container {
-   flex-direction: column;
-   /* gap: 20px; */
-  
-    }
-    .flex{
-        margin-bottom: 20px;
+
+
+.point{
+    display: flex;
+    /* flex- direction: row; */
+    /* flex: 0 0 100%; */
+    margin-top: 20px;
+    margin-left: 5px;
+    /* flex: 0 0 100%; */
+    
+    
     }
     .post{
-        margin-bottom: 20px;
-    }
-   
+        font-family:'Nunito', sans-serif;
     
-    .point{
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 50%;  
-        /* gap: 20px;   */
-        }
-.right .arrow{
-    display: none;
-}
+        background-color:rgba(255, 255, 255, 1) ;
+  /* padding-right: 0; */
+        width: 100%;
+        height: auto;
+    padding: 20px;
+    padding-top: 0px;
+        border-radius: 10px;
+        /* text-align: center; */
+        /* padding: 35px 22px; */
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin-right:15px;
+    overflow-x: auto;
+       
+    }
+    .star{
+        margin-right: 0px;
+          
+    }
+    
+    table{
+        margin-top: 22px;
+        flex: 0 0 50%;
+    }
+    table, th, td{
+        /* border:1px solid rgba(238, 238, 238, 1); */
+    
+            padding: 10px;
+        border-collapse: collapse;
+        font-family:'Nunito', sans-serif;
+        /* text-align: center; */
+      
+    }
+     tr:hover :not(th){
+        background-color:rgb(249, 249, 249) ;
+    }
+    
   
-
-}
-
-
-    
-    @media screen and (max-width: 767px){
-      .board{
-        padding-top: 30px;
-      padding-left: 20px;
-      padding-right: 20px;
-      }
-      .top-bar{
-        padding: 10px;
-      }
+    th{
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom:1px solid rgba(238, 238, 238, 1);
     }
-
-    @media screen and (max-width: 639px){
-.board{
-    margin-left: 0;
-    padding-left: 20px;
-    
-}
-
-body.active .board{
-    margin-left:0;
-    /* width: 100%; */
-    padding-left: 20px;
-}
-
-
-
+    tr{
+        border-bottom:1px solid rgba(238, 238, 238, 1);
+      
+       
     }
-@media screen and (max-width: 470px){
-   .bell .tooltiptext{
-    width: 280px;
-    left: 75px;
-   }
-}
-@media screen and (max-width: 370px){
-  .post{
-    width: 350px;
+    td{
+        padding: 20px 10px;
+    }
+    .center{
+        text-align: center;
+    }
+    .meme{
+        padding-left: 10px;
+        /* background-color: red; */
+    }
+    .border-transperent{
+        /* background-color: dodgerblue; */
+        border-bottom: transparent;
+    }
+  .mist small{
+    /* font-family:'Nunito', sans-serif; */
+  font-size: 12px;
+  font-weight: 400;
   }
-}
+    .mist div{
+        /* font-size: 30px; */
+        font-weight: 700;
+    }
+    .mist p{
+        /* font-family: 'Montserrat', sans-serif; */
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(136, 136, 136, 1);
+    }
+    .mist  span{
+        color: rgba(136, 136, 136, 1);
+        font-size: 12px;
+        font-weight: 700;
+    }
+  
+    .more{
+        /* background-color: red; */
+        padding-right: 70px;
+        padding-left: 50px;
+    }
